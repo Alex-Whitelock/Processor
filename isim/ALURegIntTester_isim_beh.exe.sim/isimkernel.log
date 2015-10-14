@@ -1,0 +1,29 @@
+Command line:
+   ALURegIntTester_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63068
+
+Wed Oct 14 12:27:36 2015
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 670.679 Meg
+
+ Total Signals          : 244
+ Total Nets             : 434
+ Total Signal Drivers   : 70
+ Total Blocks           : 58
+ Total Primitive Blocks : 55
+ Total Processes        : 95
+ Total Traceable Variables  : 84
+ Total Scalar Nets and Variables : 1087
+Total Line Count : 820
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 670.679 Meg
+
+Wed Oct 14 12:27:53 2015
+

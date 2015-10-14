@@ -1,0 +1,3 @@
+verilog work "Register.v"
+verilog work "FourBitDecoder.v"
+verilog work "RegisterBank.v"

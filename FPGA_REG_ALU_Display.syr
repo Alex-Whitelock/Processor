@@ -1,0 +1,1054 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: FPGA_REG_ALU_Display.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FPGA_REG_ALU_Display.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FPGA_REG_ALU_Display"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : FPGA_REG_ALU_Display
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\Register.v" into library work
+Parsing module <Register>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FourBitDecoder.v" into library work
+Parsing module <FourBitDecoder>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\twoInputMux.v" into library work
+Parsing module <twoInputMux>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\seg_display.v" into library work
+Parsing module <seg_display>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\RegisterBank.v" into library work
+Parsing module <RegisterBank>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FlagRegister.v" into library work
+Parsing module <FlagRegister>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\ALU_Buffer.v" into library work
+Parsing module <ALU_Buffer>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" into library work
+Parsing module <Test_Cases>.
+WARNING:HDLCompiler:568 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 48: Constant value is truncated to fit in <27> bits.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" into library work
+Parsing module <FOUR_LIGHTS_FSM>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\ALURegIntegration.v" into library work
+Parsing module <ALURegIntegration>.
+Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v" into library work
+Parsing module <FPGA_REG_ALU_Display>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <FPGA_REG_ALU_Display>.
+
+Elaborating module <Test_Cases>.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 93: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 104: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 116: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 128: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 140: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 152: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 164: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 176: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 188: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 200: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 212: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 224: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 236: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 248: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 260: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 272: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 284: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 296: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 308: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <ALURegIntegration>.
+
+Elaborating module <RegisterBank>.
+
+Elaborating module <FourBitDecoder>.
+
+Elaborating module <Register>.
+
+Elaborating module <ALU_Buffer>.
+
+Elaborating module <twoInputMux>.
+
+Elaborating module <ALU>.
+
+Elaborating module <FlagRegister>.
+WARNING:HDLCompiler:1127 - "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v" Line 42: Assignment to FlAGS ignored, since the identifier is never used
+
+Elaborating module <FOUR_LIGHTS_FSM>.
+
+Elaborating module <seg_display>.
+WARNING:HDLCompiler:413 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 49: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 71: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 76: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 81: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 86: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FPGA_REG_ALU_Display>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v".
+WARNING:Xst:647 - Input <select> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v" line 42: Output port <flagsOutput> of the instance <alu> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <FPGA_REG_ALU_Display> synthesized.
+
+Synthesizing Unit <Test_Cases>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v".
+    Found 5-bit register for signal <presentStage>.
+    Found 27-bit register for signal <counter>.
+    Found 27-bit adder for signal <counter[26]_GND_2_o_add_2_OUT> created at line 56.
+    Found 32x21-bit Read Only RAM for signal <_n0164>
+WARNING:Xst:737 - Found 1-bit latch for signal <nextStage<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextStage<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextStage<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextStage<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nextStage<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reset_out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <immediate<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <regEnables<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <op<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <exop<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <exop<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred  22 Latch(s).
+Unit <Test_Cases> synthesized.
+
+Synthesizing Unit <ALURegIntegration>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\ALURegIntegration.v".
+WARNING:Xst:647 - Input <Cin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ALURegIntegration> synthesized.
+
+Synthesizing Unit <RegisterBank>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\RegisterBank.v".
+    Summary:
+	no macro.
+Unit <RegisterBank> synthesized.
+
+Synthesizing Unit <FourBitDecoder>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FourBitDecoder.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <FourBitDecoder> synthesized.
+
+Synthesizing Unit <Register>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\Register.v".
+    Found 16-bit register for signal <DataOut>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <Register> synthesized.
+
+Synthesizing Unit <ALU_Buffer>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\ALU_Buffer.v".
+    Found 1-bit tristate buffer for signal <buffOutput<15>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<14>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<13>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<12>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<11>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<10>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<9>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<8>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<7>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<6>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<5>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<4>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<3>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<2>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<1>> created at line 28
+    Found 1-bit tristate buffer for signal <buffOutput<0>> created at line 28
+    Summary:
+	inferred  16 Tristate(s).
+Unit <ALU_Buffer> synthesized.
+
+Synthesizing Unit <twoInputMux>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\twoInputMux.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <twoInputMux> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\ALU.v".
+        R_Type = 4'b0000
+        Shift = 4'b1000
+        ADD = 4'b0101
+        ADDU = 4'b0110
+        ADDC = 4'b0111
+        ADDCU = 4'b1010
+        SUB = 4'b1001
+        CMP = 4'b1011
+        CMPU = 4'b1000
+        AND = 4'b0001
+        OR = 4'b0010
+        XOR = 4'b0011
+        NOP = 4'b0000
+        NOT = 4'b0100
+        LW = 4'b1100
+        SW = 4'b1111
+        ADDI = 4'b0101
+        ADDUI = 4'b0110
+        ADDCI = 4'b0111
+        ADDCUI = 4'b1101
+        SUBI = 4'b1001
+        CMPI = 4'b1011
+        LWI = 4'b0011
+        ANDI = 4'b0001
+        LSH = 4'b0100
+        LSHI = 4'b1000
+        RSH = 4'b0101
+        RSHI = 4'b0111
+        ALSH = 4'b0110
+        ARSH = 4'b0011
+    Found 16-bit subtractor for signal <Rdest[15]_Rsrc[15]_sub_63_OUT> created at line 560.
+    Found 16-bit adder for signal <n0104> created at line 497.
+    Found 16-bit adder for signal <_n0110> created at line 497.
+    Found 16-bit shifter logical left for signal <Rdest[15]_Rsrc[15]_shift_left_33_OUT> created at line 396
+    Found 16-bit shifter logical right for signal <Rdest[15]_Rsrc[15]_shift_right_35_OUT> created at line 406
+    Found 16-bit shifter arithmetic right for signal <Rdest[15]_Rsrc[15]_shift_right_38_OUT> created at line 421
+    Found 16-bit 16-to-1 multiplexer for signal <exop[3]_Rdest[15]_wide_mux_31_OUT> created at line 91.
+    Found 5-bit 13-to-1 multiplexer for signal <exop[3]_GND_72_o_wide_mux_32_OUT> created at line 91.
+    Found 16-bit 15-to-1 multiplexer for signal <out> created at line 88.
+    Found 16-bit comparator greater for signal <Rdest[15]_Rsrc[15]_LessThan_22_o> created at line 274
+    Found 16-bit comparator lessequal for signal <Rsrc[15]_Rdest[15]_LessThan_23_o> created at line 280
+    Found 16-bit comparator equal for signal <Rdest[15]_Rsrc[15]_equal_56_o> created at line 499
+    Found 16-bit comparator greater for signal <Rsrc[15]_Rdest[15]_LessThan_66_o> created at line 591
+    Found 16-bit comparator lessequal for signal <Rdest[15]_Rsrc[15]_LessThan_67_o> created at line 597
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <FlagRegister>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FlagRegister.v".
+    Found 5-bit register for signal <savedFlags>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <FlagRegister> synthesized.
+
+Synthesizing Unit <FOUR_LIGHTS_FSM>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v".
+    Found 28-bit register for signal <count>.
+    Found 2-bit register for signal <pres_s>.
+    Found finite state machine <FSM_0> for signal <pres_s>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 28-bit adder for signal <count[27]_GND_76_o_add_2_OUT> created at line 49.
+    Found 4-bit 4-to-1 multiplexer for signal <BCD_Sel> created at line 67.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <FOUR_LIGHTS_FSM> synthesized.
+
+Synthesizing Unit <seg_display>.
+    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\seg_display.v".
+    Found 16x8-bit Read Only RAM for signal <bcd_out>
+    Found 4x4-bit Read Only RAM for signal <sel_out>
+    Summary:
+	inferred   2 RAM(s).
+Unit <seg_display> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port Read Only RAM                    : 1
+ 32x21-bit single-port Read Only RAM                   : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 5
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 1
+# Registers                                            : 20
+ 16-bit register                                       : 16
+ 27-bit register                                       : 1
+ 28-bit register                                       : 1
+ 5-bit register                                        : 2
+# Latches                                              : 22
+ 1-bit latch                                           : 22
+# Comparators                                          : 5
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 2
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 15-to-1 multiplexer                            : 1
+ 16-bit 16-to-1 multiplexer                            : 1
+ 16-bit 2-to-1 multiplexer                             : 7
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 13-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# Tristates                                            : 512
+ 1-bit tristate buffer                                 : 512
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <immediate_15> (without init value) has a constant value of 0 in block <TEST>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <savedFlags_1> of sequential type is unconnected in block <Flags>.
+WARNING:Xst:2677 - Node <savedFlags_2> of sequential type is unconnected in block <Flags>.
+WARNING:Xst:2677 - Node <savedFlags_3> of sequential type is unconnected in block <Flags>.
+WARNING:Xst:2677 - Node <savedFlags_4> of sequential type is unconnected in block <Flags>.
+
+Synthesizing (advanced) Unit <FOUR_LIGHTS_FSM>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <FOUR_LIGHTS_FSM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Test_Cases>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <presentStage> prevents it from being combined with the RAM <Mram__n0164> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 21-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <presentStage>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Test_Cases> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seg_display>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sel_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <sel>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sel_out>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_bcd_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bcd>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <bcd_out>       |          |
+    -----------------------------------------------------------------------
+Unit <seg_display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 32x21-bit single-port distributed Read Only RAM       : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
+# Counters                                             : 2
+ 27-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 266
+ Flip-Flops                                            : 266
+# Comparators                                          : 5
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 2
+ 16-bit comparator lessequal                           : 2
+# Multiplexers                                         : 13
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 15-to-1 multiplexer                            : 1
+ 16-bit 16-to-1 multiplexer                            : 1
+ 16-bit 2-to-1 multiplexer                             : 7
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 13-to-1 multiplexer                             : 1
+# Logic shifters                                       : 3
+ 16-bit shifter arithmetic right                       : 1
+ 16-bit shifter logical left                           : 1
+ 16-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <immediate_15> (without init value) has a constant value of 0 in block <Test_Cases>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <pres_s[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+WARNING:Xst:2042 - Unit ALU_Buffer: 16 internal tristates are replaced by logic (pull-up yes): buffOutput<0>, buffOutput<10>, buffOutput<11>, buffOutput<12>, buffOutput<13>, buffOutput<14>, buffOutput<15>, buffOutput<1>, buffOutput<2>, buffOutput<3>, buffOutput<4>, buffOutput<5>, buffOutput<6>, buffOutput<7>, buffOutput<8>, buffOutput<9>.
+
+Optimizing unit <FPGA_REG_ALU_Display> ...
+
+Optimizing unit <Test_Cases> ...
+
+Optimizing unit <ALURegIntegration> ...
+
+Optimizing unit <RegisterBank> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:2677 - Node <alu/Flags/savedFlags_1> of sequential type is unconnected in block <FPGA_REG_ALU_Display>.
+WARNING:Xst:2677 - Node <alu/Flags/savedFlags_2> of sequential type is unconnected in block <FPGA_REG_ALU_Display>.
+WARNING:Xst:2677 - Node <alu/Flags/savedFlags_3> of sequential type is unconnected in block <FPGA_REG_ALU_Display>.
+WARNING:Xst:2677 - Node <alu/Flags/savedFlags_4> of sequential type is unconnected in block <FPGA_REG_ALU_Display>.
+WARNING:Xst:1710 - FF/Latch <alu/regBank/Register9/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register10/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register8/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register9/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register14/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register11/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register12/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register13/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register3/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register1/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register2/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register7/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register4/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_4> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_5> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_6> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_7> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_8> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_9> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_10> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_11> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_12> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_13> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_14> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register5/DataOut_15> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_0> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_1> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_2> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <alu/regBank/Register6/DataOut_3> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <light/count_17> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_18> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_19> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_20> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_21> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_22> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_23> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_24> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_25> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_26> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <light/count_27> (without init value) has a constant value of 0 in block <FPGA_REG_ALU_Display>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FPGA_REG_ALU_Display, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FPGA_REG_ALU_Display.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 521
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 63
+#      LUT2                        : 33
+#      LUT3                        : 34
+#      LUT4                        : 37
+#      LUT5                        : 28
+#      LUT6                        : 42
+#      MUXCY                       : 202
+#      VCC                         : 1
+#      XORCY                       : 76
+# FlipFlops/Latches                : 105
+#      FD                          : 30
+#      FDR                         : 17
+#      FDRE                        : 37
+#      LD                          : 21
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             105  out of  18224     0%  
+ Number of Slice LUTs:                  241  out of   9112     2%  
+    Number used as Logic:               241  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    253
+   Number with an unused Flip Flop:     148  out of    253    58%  
+   Number with an unused LUT:            12  out of    253     4%  
+   Number of fully used LUT-FF pairs:    93  out of    253    36%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  14  out of    232     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------+------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)  | Load  |
+-----------------------------------------+------------------------+-------+
+clk                                      | BUFGP                  | 84    |
+TEST/Mram__n016415(TEST/Mram__n0164151:O)| BUFG(*)(TEST/exop_0)   | 21    |
+-----------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.285ns (Maximum Frequency: 189.229MHz)
+   Minimum input arrival time before clock: 3.063ns
+   Maximum output required time after clock: 6.244ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.285ns (frequency: 189.229MHz)
+  Total number of paths / destination ports: 9017 / 101
+-------------------------------------------------------------------------
+Delay:               5.285ns (Levels of Logic = 29)
+  Source:            alu/regBank/Register15/DataOut_0 (FF)
+  Destination:       alu/regBank/Register0/DataOut_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: alu/regBank/Register15/DataOut_0 to alu/regBank/Register0/DataOut_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.617  alu/regBank/Register15/DataOut_0 (alu/regBank/Register15/DataOut_0)
+     LUT2:I1->O            1   0.205   0.000  alu/inputABus<0>16 (alu/inputABus<0>16)
+     MUXCY:S->O            1   0.172   0.000  alu/inputABus<0>_MUXCY_0 (alu/inputABus<0>1)
+     MUXCY:CI->O           1   0.019   0.000  alu/inputABus<0>_MUXCY_1 (alu/inputABus<0>2)
+     MUXCY:CI->O           1   0.019   0.000  alu/inputABus<0>_MUXCY_2 (alu/inputABus<0>3)
+     MUXCY:CI->O           1   0.019   0.000  alu/inputABus<0>_MUXCY_3 (alu/inputABus<0>4)
+     MUXCY:CI->O           1   0.019   0.000  alu/inputABus<0>_MUXCY_4 (alu/inputABus<0>5)
+     MUXCY:CI->O           1   0.019   0.000  alu/inputABus<0>_MUXCY_5 (alu/inputABus<0>6)
+     MUXCY:CI->O           1   0.019   0.000  alu/inputABus<0>_MUXCY_6 (alu/inputABus<0>7)
+     MUXCY:CI->O           3   0.213   0.651  alu/inputABus<0>_MUXCY_7 (alu/inputABus<0>)
+     LUT2:I1->O            1   0.205   0.000  alu/theALU/Madd_n0104_lut<0>1 (alu/theALU/Madd_n0104_lut<0>1)
+     MUXCY:S->O            1   0.172   0.000  alu/theALU/Madd_n0104_cy<0> (alu/theALU/Madd_n0104_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<1> (alu/theALU/Madd_n0104_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<2> (alu/theALU/Madd_n0104_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<3> (alu/theALU/Madd_n0104_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<4> (alu/theALU/Madd_n0104_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<5> (alu/theALU/Madd_n0104_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<6> (alu/theALU/Madd_n0104_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<7> (alu/theALU/Madd_n0104_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<8> (alu/theALU/Madd_n0104_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<9> (alu/theALU/Madd_n0104_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<10> (alu/theALU/Madd_n0104_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<11> (alu/theALU/Madd_n0104_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<12> (alu/theALU/Madd_n0104_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  alu/theALU/Madd_n0104_cy<13> (alu/theALU/Madd_n0104_cy<13>)
+     XORCY:CI->O           2   0.180   0.617  alu/theALU/Madd_n0104_xor<14> (alu/theALU/n0104<14>)
+     LUT1:I0->O            1   0.205   0.000  alu/theALU/Madd__n0110_cy<14>_rt (alu/theALU/Madd__n0110_cy<14>_rt)
+     MUXCY:S->O            0   0.172   0.000  alu/theALU/Madd__n0110_cy<14> (alu/theALU/Madd__n0110_cy<14>)
+     XORCY:CI->O           1   0.180   0.580  alu/theALU/Madd__n0110_xor<15> (alu/theALU/_n0110<0>)
+     LUT5:I4->O            2   0.205   0.000  alu/theALU/Mmux_out153 (alu/aluOutputBus<15>)
+     FDRE:D                    0.102          alu/regBank/Register15/DataOut_15
+    ----------------------------------------
+    Total                      5.285ns (2.819ns logic, 2.466ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.063ns (Levels of Logic = 2)
+  Source:            resetIN (PAD)
+  Destination:       TEST/counter_25 (FF)
+  Destination Clock: clk rising
+
+  Data Path: resetIN to TEST/counter_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.222   1.534  resetIN_IBUF (resetIN_IBUF)
+     LUT3:I0->O            1   0.205   0.000  TEST/counter_25_rstpot (TEST/counter_25_rstpot)
+     FD:D                      0.102          TEST/counter_25
+    ----------------------------------------
+    Total                      3.063ns (1.529ns logic, 1.534ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'TEST/Mram__n016415'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.564ns (Levels of Logic = 1)
+  Source:            resetIN (PAD)
+  Destination:       TEST/reset_out (LATCH)
+  Destination Clock: TEST/Mram__n016415 falling
+
+  Data Path: resetIN to TEST/reset_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            33   1.222   1.305  resetIN_IBUF (resetIN_IBUF)
+     LD:D                      0.037          TEST/reset_out
+    ----------------------------------------
+    Total                      2.564ns (1.259ns logic, 1.305ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 176 / 11
+-------------------------------------------------------------------------
+Offset:              6.244ns (Levels of Logic = 3)
+  Source:            light/pres_s_FSM_FFd2 (FF)
+  Destination:       outDisplay<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: light/pres_s_FSM_FFd2 to outDisplay<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.221  light/pres_s_FSM_FFd2 (light/pres_s_FSM_FFd2)
+     LUT6:I0->O            7   0.203   1.021  light/Mmux_BCD_Sel11 (light/BCD_Sel<0>)
+     LUT4:I0->O            1   0.203   0.579  light/seg_display/Mram_bcd_out21 (outDisplay_2_OBUF)
+     OBUF:I->O                 2.571          outDisplay_2_OBUF (outDisplay<2>)
+    ----------------------------------------
+    Total                      6.244ns (3.424ns logic, 2.820ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock TEST/Mram__n016415
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.145|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+TEST/Mram__n016415|         |    6.612|         |         |
+clk               |    5.285|         |         |         |
+------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.31 secs
+ 
+--> 
+
+Total memory usage is 259712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  296 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

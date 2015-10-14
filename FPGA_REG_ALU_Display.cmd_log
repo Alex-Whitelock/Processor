@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/u0694842/Desktop/oct14/Processor/FPGA_REG_ALU_Display.xst" -ofn "C:/Users/u0694842/Desktop/oct14/Processor/FPGA_REG_ALU_Display.syr" 

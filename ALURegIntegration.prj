@@ -1,0 +1,8 @@
+verilog work "Register.v"
+verilog work "FourBitDecoder.v"
+verilog work "twoInputMux.v"
+verilog work "RegisterBank.v"
+verilog work "FlagRegister.v"
+verilog work "ALU_Buffer.v"
+verilog work "ALU.v"
+verilog work "ALURegIntegration.v"
