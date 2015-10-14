@@ -5,7 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"C:/Users/u0694842/Desktop/oct14/Processor/Test_Cases.v" Line 48: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">27</arg>&gt; bits.
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 30: Redeclaration of ansi port <arg fmt="%s" index="1">ReadDataA</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 31: Redeclaration of ansi port <arg fmt="%s" index="1">ReadDataB</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 41: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">AddressA</arg>&gt;. Formal port size is <arg fmt="%d" index="2">15</arg>-bit while actual signal size is <arg fmt="%d" index="1">32768</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 42: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">BCD_display</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>
