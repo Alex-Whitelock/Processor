@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 ////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:
+// Company: Rogue Squadron
+// Engineer:	Daniel Clyde, Alexander Whitelock, Logan Scovil, William Black.
 //
 // Create Date:   20:05:44 09/29/2015
 // Design Name:   Mem_FPGA_Test

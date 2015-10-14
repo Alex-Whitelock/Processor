@@ -1,10 +1,14 @@
 ISim log file
-Running: C:\Users\u0694842\Desktop\oct14\Processor\testFin_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/u0694842/Desktop/oct14/Processor/testFin_isim_beh.wdb 
+Running: C:\Users\u0607599\Documents\GitHub\Processor\testMem_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/u0607599/Documents/GitHub/Processor/testMem_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING: File "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 37.  For instance uut/mem/, width 15 of formal port AddressA is not equal to width 32768 of actual signal AddressA.
+WARNING: File "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 38.  For instance uut/mem/, width 15 of formal port AddressB is not equal to width 32768 of actual signal AddressB.
+WARNING: File "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 42.  For instance uut/light/, width 8 of formal port BCD_display is not equal to width 1 of actual signal outDisplay.
+WARNING: File "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 42.  For instance uut/light/, width 4 of formal port An_display is not equal to width 1 of actual signal anDisplay.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

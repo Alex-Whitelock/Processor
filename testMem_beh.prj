@@ -1,0 +1,7 @@
+verilog work "seg_display.v"
+verilog work "Memory_Managment.v"
+verilog work "FSM_MEM_TEST.v"
+verilog work "FOUR_LIGHTS_FSM.v"
+verilog work "Mem_FPGA_Test.v"
+verilog work "testMem.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
