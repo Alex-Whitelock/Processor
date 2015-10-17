@@ -18,17 +18,18 @@
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v/alu - ALURegIntegration</ClosedNode>
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v/light - FOUR_LIGHTS_FSM</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0607599|Documents|GitHub|Processor|Mem_FPGA_Test.v</ClosedNode>
+         <ClosedNode>/Mem_FPGA_Test C:|Users|u0607599|Documents|GitHub|Processor|Mem_FPGA_Test.v/light - FOUR_LIGHTS_FSM</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Desktop|oct14|Processor|Mem_FPGA_Test.v</ClosedNode>
          <ClosedNode>/RegisterBank C:|Users|u0694842|Desktop|oct14|Processor|RegisterBank.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>FPGA_REG_ALU_Display (C:/Users/u0607599/Documents/GitHub/Processor/FPGA_REG_ALU_Display.v)</SelectedItem>
+         <SelectedItem>xc6slx16-3csg324</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000161000000020000000000000000000000000200000064ffffffff000000810000000300000002000001610000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>FPGA_REG_ALU_Display (C:/Users/u0607599/Documents/GitHub/Processor/FPGA_REG_ALU_Display.v)</CurrentItem>
+      <CurrentItem>xc6slx16-3csg324</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -40,7 +41,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000149000000010000000100000000000000000000000064ffffffff000000810000000000000001000001490000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -77,13 +78,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000149000000010000000100000000000000000000000064ffffffff000000810000000000000001000001490000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -102,6 +103,7 @@
          <ClosedNode>/Memory_Simulations_2 C:|Users|u0607599|Documents|GitHub|Processor|Memory_Simulations_2.v</ClosedNode>
          <ClosedNode>/Memory_Simulations_2 C:|Users|u0694842|Desktop|oct14|Processor|Memory_Simulations_2.v</ClosedNode>
          <ClosedNode>/Memory_Simulations_2 C:|Users|u0694842|Documents|GitHub|Processor|Memory_Simulations_2.v</ClosedNode>
+         <ClosedNode>/Sign_Test C:|Users|u0607599|Documents|GitHub|Processor|Sign_Test.v</ClosedNode>
          <ClosedNode>/immTest C:|Users|u0607599|Documents|GitHub|Processor|immTest.v</ClosedNode>
          <ClosedNode>/immTest C:|Users|u0694842|Desktop|oct14|Processor|immTest.v</ClosedNode>
          <ClosedNode>/immTest C:|Users|u0694842|Documents|GitHub|Processor|immTest.v</ClosedNode>
@@ -121,13 +123,13 @@
          <ClosedNode>/testPathing_REG_ALU_TEST C:|Users|u0694842|Documents|GitHub|Processor|testPathing_REG_ALU_TEST.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - ALURegIntegration (C:/Users/u0694842/Documents/GitHub/Processor/ALURegIntegration.v)</SelectedItem>
+         <SelectedItem>Sign_Test (C:/Users/u0607599/Documents/GitHub/Processor/Sign_Test.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000177000000020000000000000000000000000200000064ffffffff000000810000000300000002000001770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000195000000020000000000000000000000000200000064ffffffff000000810000000300000002000001950000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - ALURegIntegration (C:/Users/u0694842/Documents/GitHub/Processor/ALURegIntegration.v)</CurrentItem>
+      <CurrentItem>Sign_Test (C:/Users/u0607599/Documents/GitHub/Processor/Sign_Test.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -139,7 +141,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fd000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fd0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -148,14 +150,14 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fd000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fd0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
 </Project>

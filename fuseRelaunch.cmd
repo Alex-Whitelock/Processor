@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/u0607599/Documents/GitHub/Processor/testMem_isim_beh.exe" -prj "C:/Users/u0607599/Documents/GitHub/Processor/testMem_beh.prj" "work.testMem" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/u0607599/Documents/GitHub/Processor/Sign_Test_isim_beh.exe" -prj "C:/Users/u0607599/Documents/GitHub/Processor/Sign_Test_beh.prj" "work.Sign_Test" "work.glbl" 

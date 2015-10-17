@@ -42,6 +42,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="FPGA_REG_ALU_Display.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FPGA_REG_ALU_Display.xst"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="FPGA_REG_ALU_Display_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Program_Counter.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Program_Counter.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Program_Counter.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Program_Counter_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="RegisterBank.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="RegisterBank.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="RegisterBank.ngc"/>
@@ -51,6 +55,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="RegisterBank.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="RegisterBank.xst"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RegisterBank_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sign_Extend_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sign_Extend_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sign_Test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sign_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Sign_Test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sign_Test_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Prog_Count_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Prog_Count_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="immTest_isim_beh.exe"/>
@@ -67,17 +79,13 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1444847248" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1444847248">
+    <transform xil_pn:end_ts="1445113762" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444852803" xil_pn:in_ck="2658127637137918146" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1444852802">
+    <transform xil_pn:end_ts="1445113762" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="ALURegIntTester.v"/>
       <outfile xil_pn:name="ALURegIntegration.v"/>
@@ -92,9 +100,13 @@
       <outfile xil_pn:name="MemorySimulations.v"/>
       <outfile xil_pn:name="Memory_Managment.v"/>
       <outfile xil_pn:name="Memory_Simulations_2.v"/>
+      <outfile xil_pn:name="Program_Counter.v"/>
       <outfile xil_pn:name="Register.v"/>
       <outfile xil_pn:name="RegisterBank.v"/>
+      <outfile xil_pn:name="Sign_Extend.v"/>
+      <outfile xil_pn:name="Sign_Test.v"/>
       <outfile xil_pn:name="Test_Cases.v"/>
+      <outfile xil_pn:name="Test_Prog_Count.v"/>
       <outfile xil_pn:name="immTest.v"/>
       <outfile xil_pn:name="seg_display.v"/>
       <outfile xil_pn:name="simpleALU_REG_TESTER.v"/>
@@ -104,26 +116,21 @@
       <outfile xil_pn:name="testPathing_REG_ALU_TEST.v"/>
       <outfile xil_pn:name="twoInputMux.v"/>
     </transform>
-    <transform xil_pn:end_ts="1444852803" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1064150194265198031" xil_pn:start_ts="1444852803">
+    <transform xil_pn:end_ts="1445113762" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4602391510275545024" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444852803" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8925300074158970867" xil_pn:start_ts="1444852803">
+    <transform xil_pn:end_ts="1445113762" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2563969306199804930" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444847248" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-342385388660349707" xil_pn:start_ts="1444847248">
+    <transform xil_pn:end_ts="1445113762" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-342385388660349707" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444852803" xil_pn:in_ck="2658127637137918146" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1444852803">
+    <transform xil_pn:end_ts="1445113762" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="ALURegIntTester.v"/>
       <outfile xil_pn:name="ALURegIntegration.v"/>
@@ -138,9 +145,13 @@
       <outfile xil_pn:name="MemorySimulations.v"/>
       <outfile xil_pn:name="Memory_Managment.v"/>
       <outfile xil_pn:name="Memory_Simulations_2.v"/>
+      <outfile xil_pn:name="Program_Counter.v"/>
       <outfile xil_pn:name="Register.v"/>
       <outfile xil_pn:name="RegisterBank.v"/>
+      <outfile xil_pn:name="Sign_Extend.v"/>
+      <outfile xil_pn:name="Sign_Test.v"/>
       <outfile xil_pn:name="Test_Cases.v"/>
+      <outfile xil_pn:name="Test_Prog_Count.v"/>
       <outfile xil_pn:name="immTest.v"/>
       <outfile xil_pn:name="seg_display.v"/>
       <outfile xil_pn:name="simpleALU_REG_TESTER.v"/>
@@ -150,32 +161,26 @@
       <outfile xil_pn:name="testPathing_REG_ALU_TEST.v"/>
       <outfile xil_pn:name="twoInputMux.v"/>
     </transform>
-    <transform xil_pn:end_ts="1444852808" xil_pn:in_ck="2658127637137918146" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1010097518502812796" xil_pn:start_ts="1444852803">
+    <transform xil_pn:end_ts="1445113765" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8993420835564471142" xil_pn:start_ts="1445113762">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sign_Test_beh.prj"/>
+      <outfile xil_pn:name="Sign_Test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="testMem_beh.prj"/>
-      <outfile xil_pn:name="testMem_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1444852808" xil_pn:in_ck="-7249826641571201923" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6224642094960128103" xil_pn:start_ts="1444852808">
+    <transform xil_pn:end_ts="1445113765" xil_pn:in_ck="6608249668909445719" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6586461833788513961" xil_pn:start_ts="1445113765">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sign_Test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="testMem_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1444845528" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1444845528">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -210,8 +215,10 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALURegIntegration.ngr"/>
       <outfile xil_pn:name="FPGA_REG_ALU_Display.lso"/>
       <outfile xil_pn:name="FPGA_REG_ALU_Display.ngc"/>
