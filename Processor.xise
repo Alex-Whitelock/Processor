@@ -133,6 +133,19 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="73"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="73"/>
     </file>
+    <file xil_pn:name="program_counter_module.bmm" xil_pn:type="FILE_BMM">
+      <association xil_pn:name="Implementation" xil_pn:seqID="69"/>
+    </file>
+    <file xil_pn:name="program_counter_module.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="70"/>
+    </file>
+    <file xil_pn:name="Test_Prog_Count.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="71"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="71"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="71"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="71"/>
+    </file>
   </files>
 
   <properties>
