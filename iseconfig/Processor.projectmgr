@@ -21,12 +21,14 @@
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Documents|GitHub|Processor|Mem_FPGA_Test.v</ClosedNode>
          <ClosedNode>/RegisterBank C:|Users|u0694842|Desktop|oct14|Processor|RegisterBank.v</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>Program_Counter (C:/Users/u0694842/Documents/GitHub/Processor/program_counter_module.v)</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000161000000020000000000000000000000000200000064ffffffff000000810000000300000002000001610000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>FPGA_REG_ALU_Display (C:/Users/u0694842/Documents/GitHub/Processor/FPGA_REG_ALU_Display.v)</CurrentItem>
+      <CurrentItem>Program_Counter (C:/Users/u0694842/Documents/GitHub/Processor/program_counter_module.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -148,13 +150,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014d0000000001000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
