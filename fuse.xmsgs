@@ -5,5 +5,20 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/Users/u0694842/Documents/GitHub/Processor/ALU_FPGA_TESTER.v" Line 37: Redeclaration of ansi port <arg fmt="%s" index="1">flags</arg> is not allowed
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="unknown" >"C:/Users/u0694842/Documents/GitHub/Processor/ALU_FPGA_TESTER.v" Line 39: Instantiating &lt;<arg fmt="%s" index="1">tester</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">physical_tester</arg>&gt;
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1654" delta="unknown" >"C:/Users/u0694842/Documents/GitHub/Processor/ALU_FPGA_TESTER.v" Line 43: Instantiating &lt;<arg fmt="%s" index="1">bcder</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">bcdStuff</arg>&gt;
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/u0694842/Documents/GitHub/Processor/ALU_FPGA_TESTER.v" Line 41: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">16</arg>-bit.
+</msg>
+
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
+</msg>
+
 </messages>
 

@@ -40,7 +40,7 @@ module ALU_FPGA_TESTER(
 	 
 	 ALU alu(opcode1,opcode2,data1,data2,out,flags);
 	 
-	 bcdStuff bcder(2'd0,out[3:0], selOut,bdOut);
+	 seg_display seg_display(2'd0,out[3:0], selOut,bdOut);
 
 
 endmodule
