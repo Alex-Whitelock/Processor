@@ -1,1 +1,3 @@
 xst -intstyle ise -ifn "C:/Users/u0694842/Desktop/oct14/Processor/FPGA_REG_ALU_Display.xst" -ofn "C:/Users/u0694842/Desktop/oct14/Processor/FPGA_REG_ALU_Display.syr" 
+xst -intstyle ise -ifn "C:/Users/u0694842/Documents/GitHub/Processor/FPGA_REG_ALU_Display.xst" -ofn "C:/Users/u0694842/Documents/GitHub/Processor/FPGA_REG_ALU_Display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm program_counter_module.bmm -p xc6slx16-csg324-3 FPGA_REG_ALU_Display.ngc FPGA_REG_ALU_Display.ngd  

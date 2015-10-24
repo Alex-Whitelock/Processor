@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Reading design: FPGA_REG_ALU_Display.prj
 
@@ -105,30 +105,30 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\Register.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\Register.v" into library work
 Parsing module <Register>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FourBitDecoder.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\FourBitDecoder.v" into library work
 Parsing module <FourBitDecoder>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\twoInputMux.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\twoInputMux.v" into library work
 Parsing module <twoInputMux>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\seg_display.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\seg_display.v" into library work
 Parsing module <seg_display>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\RegisterBank.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\RegisterBank.v" into library work
 Parsing module <RegisterBank>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FlagRegister.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\FlagRegister.v" into library work
 Parsing module <FlagRegister>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\ALU_Buffer.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\ALU_Buffer.v" into library work
 Parsing module <ALU_Buffer>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\ALU.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\ALU.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" into library work
 Parsing module <Test_Cases>.
-WARNING:HDLCompiler:568 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 48: Constant value is truncated to fit in <27> bits.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" into library work
+WARNING:HDLCompiler:568 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 48: Constant value is truncated to fit in <27> bits.
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v" into library work
 Parsing module <FOUR_LIGHTS_FSM>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\ALURegIntegration.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\ALURegIntegration.v" into library work
 Parsing module <ALURegIntegration>.
-Analyzing Verilog file "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v" into library work
+Analyzing Verilog file "C:\Users\u0694842\Documents\GitHub\Processor\FPGA_REG_ALU_Display.v" into library work
 Parsing module <FPGA_REG_ALU_Display>.
 
 =========================================================================
@@ -138,25 +138,25 @@ Parsing module <FPGA_REG_ALU_Display>.
 Elaborating module <FPGA_REG_ALU_Display>.
 
 Elaborating module <Test_Cases>.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 93: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 104: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 116: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 128: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 140: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 152: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 164: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 176: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 188: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 200: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 212: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 224: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 236: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 248: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 260: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 272: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 284: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 296: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v" Line 308: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 93: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 104: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 116: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 128: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 140: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 152: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 164: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 176: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 188: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 200: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 212: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 224: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 236: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 248: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 260: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 272: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 284: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 296: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v" Line 308: Signal <reset> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <ALURegIntegration>.
 
@@ -173,31 +173,31 @@ Elaborating module <twoInputMux>.
 Elaborating module <ALU>.
 
 Elaborating module <FlagRegister>.
-WARNING:HDLCompiler:1127 - "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v" Line 42: Assignment to FlAGS ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\u0694842\Documents\GitHub\Processor\FPGA_REG_ALU_Display.v" Line 42: Assignment to FlAGS ignored, since the identifier is never used
 
 Elaborating module <FOUR_LIGHTS_FSM>.
 
 Elaborating module <seg_display>.
-WARNING:HDLCompiler:413 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 49: Result of 29-bit expression is truncated to fit in 28-bit target.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 71: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 76: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 81: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v" Line 86: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v" Line 49: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v" Line 71: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v" Line 76: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v" Line 81: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v" Line 86: Signal <num> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <FPGA_REG_ALU_Display>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\FPGA_REG_ALU_Display.v".
 WARNING:Xst:647 - Input <select> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\u0694842\Desktop\oct14\Processor\FPGA_REG_ALU_Display.v" line 42: Output port <flagsOutput> of the instance <alu> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\u0694842\Documents\GitHub\Processor\FPGA_REG_ALU_Display.v" line 42: Output port <flagsOutput> of the instance <alu> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <FPGA_REG_ALU_Display> synthesized.
 
 Synthesizing Unit <Test_Cases>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\Test_Cases.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\Test_Cases.v".
     Found 5-bit register for signal <presentStage>.
     Found 27-bit register for signal <counter>.
     Found 27-bit adder for signal <counter[26]_GND_2_o_add_2_OUT> created at line 56.
@@ -232,33 +232,33 @@ WARNING:Xst:737 - Found 1-bit latch for signal <exop<0>>. Latches may be generat
 Unit <Test_Cases> synthesized.
 
 Synthesizing Unit <ALURegIntegration>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\ALURegIntegration.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\ALURegIntegration.v".
 WARNING:Xst:647 - Input <Cin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <ALURegIntegration> synthesized.
 
 Synthesizing Unit <RegisterBank>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\RegisterBank.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\RegisterBank.v".
     Summary:
 	no macro.
 Unit <RegisterBank> synthesized.
 
 Synthesizing Unit <FourBitDecoder>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FourBitDecoder.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\FourBitDecoder.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <FourBitDecoder> synthesized.
 
 Synthesizing Unit <Register>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\Register.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\Register.v".
     Found 16-bit register for signal <DataOut>.
     Summary:
 	inferred  16 D-type flip-flop(s).
 Unit <Register> synthesized.
 
 Synthesizing Unit <ALU_Buffer>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\ALU_Buffer.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\ALU_Buffer.v".
     Found 1-bit tristate buffer for signal <buffOutput<15>> created at line 28
     Found 1-bit tristate buffer for signal <buffOutput<14>> created at line 28
     Found 1-bit tristate buffer for signal <buffOutput<13>> created at line 28
@@ -280,13 +280,13 @@ Synthesizing Unit <ALU_Buffer>.
 Unit <ALU_Buffer> synthesized.
 
 Synthesizing Unit <twoInputMux>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\twoInputMux.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\twoInputMux.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <twoInputMux> synthesized.
 
 Synthesizing Unit <ALU>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\ALU.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\ALU.v".
         R_Type = 4'b0000
         Shift = 4'b1000
         ADD = 4'b0101
@@ -339,14 +339,14 @@ Synthesizing Unit <ALU>.
 Unit <ALU> synthesized.
 
 Synthesizing Unit <FlagRegister>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FlagRegister.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\FlagRegister.v".
     Found 5-bit register for signal <savedFlags>.
     Summary:
 	inferred   5 D-type flip-flop(s).
 Unit <FlagRegister> synthesized.
 
 Synthesizing Unit <FOUR_LIGHTS_FSM>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\FOUR_LIGHTS_FSM.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\FOUR_LIGHTS_FSM.v".
     Found 28-bit register for signal <count>.
     Found 2-bit register for signal <pres_s>.
     Found finite state machine <FSM_0> for signal <pres_s>.
@@ -370,7 +370,7 @@ Synthesizing Unit <FOUR_LIGHTS_FSM>.
 Unit <FOUR_LIGHTS_FSM> synthesized.
 
 Synthesizing Unit <seg_display>.
-    Related source file is "C:\Users\u0694842\Desktop\oct14\Processor\seg_display.v".
+    Related source file is "C:\Users\u0694842\Documents\GitHub\Processor\seg_display.v".
     Found 16x8-bit Read Only RAM for signal <bcd_out>
     Found 4x4-bit Read Only RAM for signal <sel_out>
     Summary:
@@ -1041,12 +1041,12 @@ clk               |    5.285|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.31 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.16 secs
  
 --> 
 
-Total memory usage is 259712 kilobytes
+Total memory usage is 256912 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  296 (   0 filtered)

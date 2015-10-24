@@ -1,31 +1,18 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/u0607599/Documents/GitHub/Processor/testMem_isim_beh.exe -prj C:/Users/u0607599/Documents/GitHub/Processor/testMem_beh.prj work.testMem work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/u0694842/Documents/GitHub/Processor/Test_Prog_Count_isim_beh.exe -prj C:/Users/u0694842/Documents/GitHub/Processor/Test_Prog_Count_beh.prj work.Test_Prog_Count work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/u0607599/Documents/GitHub/Processor/seg_display.v" into library work
-Analyzing Verilog file "C:/Users/u0607599/Documents/GitHub/Processor/Memory_Managment.v" into library work
-Analyzing Verilog file "C:/Users/u0607599/Documents/GitHub/Processor/FSM_MEM_TEST.v" into library work
-Analyzing Verilog file "C:/Users/u0607599/Documents/GitHub/Processor/FOUR_LIGHTS_FSM.v" into library work
-Analyzing Verilog file "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" into library work
-WARNING:HDLCompiler:751 - "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 30: Redeclaration of ansi port ReadDataA is not allowed
-WARNING:HDLCompiler:751 - "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 31: Redeclaration of ansi port ReadDataB is not allowed
-Analyzing Verilog file "C:/Users/u0607599/Documents/GitHub/Processor/testMem.v" into library work
+Analyzing Verilog file "C:/Users/u0694842/Documents/GitHub/Processor/Program_Counter.v" into library work
+Analyzing Verilog file "C:/Users/u0694842/Documents/GitHub/Processor/Test_Prog_Count.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 41: Size mismatch in connection of port <AddressA>. Formal port size is 15-bit while actual signal size is 32768-bit.
-WARNING:HDLCompiler:189 - "C:/Users/u0607599/Documents/GitHub/Processor/Mem_FPGA_Test.v" Line 42: Size mismatch in connection of port <BCD_display>. Formal port size is 8-bit while actual signal size is 1-bit.
 Completed static elaboration
-Compiling module FSM_MEM_Test
-Compiling module Memory_Management
-Compiling module seg_display
-Compiling module FOUR_LIGHTS_FSM
-Compiling module Mem_FPGA_Test
-Compiling module testMem
+Compiling module Program_Counter
+Compiling module Test_Prog_Count
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 Verilog Units
-Built simulation executable C:/Users/u0607599/Documents/GitHub/Processor/testMem_isim_beh.exe
-Fuse Memory Usage: 33736 KB
-Fuse CPU Usage: 577 ms
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/u0694842/Documents/GitHub/Processor/Test_Prog_Count_isim_beh.exe
+Fuse Memory Usage: 27124 KB
+Fuse CPU Usage: 498 ms
