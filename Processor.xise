@@ -133,6 +133,10 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="73"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="73"/>
     </file>
+    <file xil_pn:name="ProcessorControlUnit.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="68"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="68"/>
+    </file>
   </files>
 
   <properties>
