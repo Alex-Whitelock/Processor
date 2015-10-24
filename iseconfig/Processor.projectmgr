@@ -17,18 +17,19 @@
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v</ClosedNode>
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v/alu - ALURegIntegration</ClosedNode>
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v/light - FOUR_LIGHTS_FSM</ClosedNode>
+         <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0755840|Desktop|Processor|FPGA_REG_ALU_Display.v/alu - ALURegIntegration</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Desktop|oct14|Processor|Mem_FPGA_Test.v</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Documents|GitHub|Processor|Mem_FPGA_Test.v</ClosedNode>
          <ClosedNode>/RegisterBank C:|Users|u0694842|Desktop|oct14|Processor|RegisterBank.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>FPGA_REG_ALU_Display (C:/Users/u0694842/Documents/GitHub/Processor/FPGA_REG_ALU_Display.v)</SelectedItem>
+         <SelectedItem>ProcessorControlUnit (C:/Users/u0755840/Desktop/Processor/program_counter_module.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000161000000020000000000000000000000000200000064ffffffff000000810000000300000002000001610000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000181000000020000000000000000000000000200000064ffffffff000000810000000300000002000001810000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>FPGA_REG_ALU_Display (C:/Users/u0694842/Documents/GitHub/Processor/FPGA_REG_ALU_Display.v)</CurrentItem>
+      <CurrentItem>ProcessorControlUnit (C:/Users/u0755840/Desktop/Processor/program_counter_module.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -40,7 +41,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000188000000010000000100000000000000000000000064ffffffff000000810000000000000001000001880000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -48,12 +49,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000171000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000a50000000100000000</ViewHeaderState>
+      <SelectedItems>
+         <SelectedItem>Memory_Simulations_2.v</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >5</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000130000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>ALU.v</CurrentItem>
+      <CurrentItem>Memory_Simulations_2.v</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -63,7 +66,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000188000000010001000100000000000000000000000064ffffffff000000810000000000000001000001880000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000013c000000010001000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -81,7 +84,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000df000000010000000100000000000000000000000064ffffffff000000810000000000000001000000df0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -122,13 +125,13 @@
          <ClosedNode>/testPathing_REG_ALU_TEST C:|Users|u0694842|Documents|GitHub|Processor|testPathing_REG_ALU_TEST.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - Program_Counter (C:/Users/u0694842/Documents/GitHub/Processor/Program_Counter.v)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000177000000020000000000000000000000000200000064ffffffff000000810000000300000002000001770000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000196000000020000000000000000000000000200000064ffffffff000000810000000300000002000001960000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - Program_Counter (C:/Users/u0694842/Documents/GitHub/Processor/Program_Counter.v)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -140,7 +143,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f0000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f00000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -149,14 +152,67 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000df000000010000000100000000000000000000000064ffffffff000000810000000000000001000000df0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001de000000e601000000050100000002</SourceProcessView>
+   <CurrentView>Post-Translate Simulation</CurrentView>
+   <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut - ProcessorControlUnit</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000177000000020000000000000000000000000200000064ffffffff000000810000000300000002000001770000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>uut - ProcessorControlUnit</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000014d0000000001000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="PostTransSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Post-Translate Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Post-Translate Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>

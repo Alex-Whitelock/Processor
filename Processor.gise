@@ -33,6 +33,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ALURegIntegration.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALURegIntegration_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALURegIntegration_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ControlLogicTest_stx_translate.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="FPGA_REG_ALU_Display.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="FPGA_REG_ALU_Display.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="FPGA_REG_ALU_Display.lso"/>
@@ -84,6 +85,9 @@
     <transform xil_pn:end_ts="1445711216" xil_pn:in_ck="2652715854476159392" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1445711216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="ALURegIntTester.v"/>
       <outfile xil_pn:name="ALURegIntegration.v"/>
@@ -128,6 +132,7 @@
     <transform xil_pn:end_ts="1445711216" xil_pn:in_ck="2652715854476159392" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1445711216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="ALURegIntTester.v"/>
       <outfile xil_pn:name="ALURegIntegration.v"/>
@@ -160,6 +165,9 @@
     <transform xil_pn:end_ts="1445711220" xil_pn:in_ck="2652715854476159392" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4532705109487641156" xil_pn:start_ts="1445711216">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Test_Prog_Count_beh.prj"/>
       <outfile xil_pn:name="Test_Prog_Count_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -170,6 +178,7 @@
     <transform xil_pn:end_ts="1445711220" xil_pn:in_ck="5976408250433617707" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="78726731666758183" xil_pn:start_ts="1445711220">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Test_Prog_Count_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

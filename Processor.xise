@@ -83,55 +83,55 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="48"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="48"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="48"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="immTest.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="56"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="56"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="56"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="testMem.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="61"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="61"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="61"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="testPathing_REG_ALU_TEST.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="65"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="65"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="65"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="testFin.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="66"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="66"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="66"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="simulated_alu_test.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="70"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="70"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="simpleALU_REG_TESTER.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="71"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="71"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="71"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="MemorySimulations.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="72"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="72"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="72"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Memory_Simulations_2.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="73"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="73"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="73"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="program_counter_module.bmm" xil_pn:type="FILE_BMM">
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
@@ -144,11 +144,17 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="71"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="71"/>
-      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="71"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="Program_Counter.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="ControlLogicTest.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="82"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="82"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="82"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="1"/>
     </file>
   </files>
 
@@ -396,7 +402,7 @@
     <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.Test_Prog_Count" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Map" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Selected Simulation Root Source Node Post-Route" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Post-Translate" xil_pn:value="work.ControlLogicTest" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Source Node" xil_pn:value="UUT" xil_pn:valueState="default"/>
     <property xil_pn:name="Set SPI Configuration Bus Width spartan6" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Setup External Master Clock Division spartan6" xil_pn:value="1" xil_pn:valueState="default"/>
@@ -414,7 +420,7 @@
     <property xil_pn:name="Specify Top Level Instance Names Behavioral" xil_pn:value="work.Test_Prog_Count" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Map" xil_pn:value="Default" xil_pn:valueState="default"/>
     <property xil_pn:name="Specify Top Level Instance Names Post-Route" xil_pn:value="Default" xil_pn:valueState="default"/>
-    <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="Default" xil_pn:valueState="default"/>
+    <property xil_pn:name="Specify Top Level Instance Names Post-Translate" xil_pn:value="work.ControlLogicTest" xil_pn:valueState="default"/>
     <property xil_pn:name="Speed Grade" xil_pn:value="-3" xil_pn:valueState="default"/>
     <property xil_pn:name="Starting Placer Cost Table (1-100) Map spartan6" xil_pn:value="1" xil_pn:valueState="default"/>
     <property xil_pn:name="Synthesis Tool" xil_pn:value="XST (VHDL/Verilog)" xil_pn:valueState="default"/>
@@ -468,7 +474,7 @@
     <property xil_pn:name="PROP_PostMapSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostParSimTop" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_PostSynthSimTop" xil_pn:value="" xil_pn:valueState="default"/>
-    <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="" xil_pn:valueState="default"/>
+    <property xil_pn:name="PROP_PostXlateSimTop" xil_pn:value="Module|ControlLogicTest" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_PreSynthesis" xil_pn:value="PreSynthesis" xil_pn:valueState="default"/>
     <property xil_pn:name="PROP_intProjectCreationTimestamp" xil_pn:value="2015-10-14T11:47:10" xil_pn:valueState="non-default"/>
     <property xil_pn:name="PROP_intWbtProjectID" xil_pn:value="FB9A98F36B4C4EE5890DA11ECEC3848B" xil_pn:valueState="non-default"/>
