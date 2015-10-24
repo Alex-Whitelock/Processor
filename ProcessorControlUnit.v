@@ -30,7 +30,7 @@ module ProcessorControlUnit(
     output [4:0] rDest,
     output [4:0] rSrc,
 	 output regOrImm,
-    output memWriteOrRead,
+    //output memWriteOrRead,
     output pcEnabled,
 	 output branchMux,
     output pcOrRegMemMUX,
@@ -92,159 +92,178 @@ begin
 	rDest <= 5'b00000;
 	rSrc <= 5'b00000;
 	regOrImm <= 1'b0;
-	memWriteOrRead <= 1'b0;
+//	memWriteOrRead <= 1'b0;
 	pcEnabled <= 1'b0;
 	branchMux <= 1'b0;
 	pcOrRegMemMUX <= 1'b0;
 	memAEnabled <= 1'b0;
 	memAWriteEnabled <= 1'b0;
 	memBEnabled <= 1'b0;
-	outReset <= 1'b0;
-			
-	case(currentState)
-		4'd0:
+	
+	if (reset == 1'b1)
 		begin
-			//This state fetches the instruction from memory.
-			currentState <= 1'b1;
-			memAEnabled <= 1'b1;
-			currentInstruction <= instruction;
-						
-		end	
-		4'd1:
+		currentState <= 5'd0;
+		end
+	else
 		begin
-			//Decode State
-			memAEnabled <= 1'b0;
-			case (currentInstruction[11:8])
-				R_Type:
-					begin
-					case (currentInstruction[7:4])
-						NOP:
-							begin
-							currentState <= 1'd0;
-							end
-						LW:
-							begin
-							currentState <= 1'd3;
-							end
-						SW:
-							begin
-							currentState <= 1'd5;
-							end
-						default:
-							begin
-							currentState <= 1'd2;
-							end
-					endcase
-					end
-				Shift:
-					begin
+		case(currentState)
+			4'd0:
+			begin
+				//This state fetches the instruction from memory.
+				memAEnabled <= 1'b1;
+				currentInstruction <= instruction;
+				currentState <= 5'd1;							
+			end	
+			4'd1:
+			begin
+				//Decode State
+				memAEnabled <= 1'b0;
+				case (currentInstruction[11:8])
+					R_Type:
+						begin
 						case (currentInstruction[7:4])
-							LSH:
+							NOP:
 								begin
-								currentState <= 2;
+								currentState <= 5'd0;
 								end
-							LSHI:
+							LW:
 								begin
-								currentState <= 7;
+								currentState <= 5'd3;
 								end
-							RSH:
+							SW:
 								begin
-								currentState <= 2;
+								currentState <= 5'd5;
 								end
-							RSHI:
+							default:
 								begin
-								currentState <= 7;
-								end
-							ALSH:
-								begin
-								currentState <= 2;
-								end
-							ARSH:
-								begin
-								currentState <= 2;
+								currentState <= 5'd2;
 								end
 						endcase
-					end
+						end
+					Shift:
+						begin
+							case (currentInstruction[7:4])
+								LSH:
+									begin
+									currentState <= 5'd2;
+									end
+								LSHI:
+									begin
+									currentState <= 5'd7;
+									end
+								RSH:
+									begin
+									currentState <= 5'd2;
+									end
+								RSHI:
+									begin
+									currentState <= 5'd7;
+									end
+								ALSH:
+									begin
+									currentState <= 5'd2;
+									end
+								ARSH:
+									begin
+									currentState <= 5'd2;
+									end
+							endcase
+						end
+					
+					default:
+						begin
+						currentState <= 5'd7;
+						end
+				endcase
 				
-				default:
-					begin
-					currentState <= 7;
-					end
+			end
+			4'd2:
+				begin
+				//R-Type Control Signals
+				regWrite <= {1'b0, currentInstruction[11:8]};
+				opCode <= currentInstruction[15:12];
+				exop <= currentInstruction[7:4];
+				rDest <= currentInstruction[11:8];
+				rSrc <= currentInstruction[3:0];
+				regOrImm <= 1'b1;
+				pcEnabled <= 1'b1;
+				//memBEnabled hmm.
+				currentState <= 5'd0;
+				end
+			4'd3:
+				begin
+				//Load Type Control Signals
+				//regWrite <= {1'b0, currentInstruction[11:8]};
+				opCode <= currentInstruction[15:12];
+				exOp <= currentInstruction[7:4];
+				rDest <= currentInstruction[11:8];//////
+				rSrc <= currentInstruction[3:0];///////////////////////////////////////
+				regOrImm <= 1'b1;
+				//memWriteOrRead <= 1'b1;
+				memAEnabled <= 1'b1;
+				//memBEnabled	
+				currentState <= 5'd4;
+				end
+			4'd4:
+				begin
+				//Secondary Load Type Control Signals
+				regWrite <= {1'b0, currentInstruction[11:8]};
+				opCode <= currentInstruction[15:12];
+				exOp <= currentInstruction[7:4];
+				rDest <= currentInstruction[11:8];//////
+				rSrc <= currentInstruction[3:0];///////////////////////////////////////
+				regOrImm <= 1'b1;
+				pcEnabled <= 1'b1;
+				memAEnabled <= 1'b1;
+				currentState <= 5'd0;
+				end
+			4'd5:
+				begin
+				//Store Type Control Signals
+				opCode <= currentInstruction[15:12];
+				exop <= currentInstruction[7:4];
+				rSrc <= currentInstruction[11:8];
+				regOrImm <= 1'b1;
+				pcEnabled <= 1'b1;
+				memAEnabled <= 1'b1;
+				memAWriteEnabled <= 1'b1;
+				currentState <= 5'd0;
+				end
+			4'd6:
+				begin
+				//Branch Type Control Signals
+				opCode <= currentInstruction[15:12];
+				//need Alex's paper
+				currentState <= 5'd0;
+				end
+			4'd7:
+				begin
+				//Immediate Type Control Signals (sign extend)
+				opCode <= currentInstruction[15:12];
+				immediateHigh <= currentInstruction[7:4];
+				immediateLow <= currentInstruction[3:0];
+				// no need for regWrite, rDest yet?
+				//memWriteOrRead
+				currentState <= 5'd8;
 				
-				
-			
-			endcase
-			
+				end
+			4'd8:
+				begin
+				//Immediate Type Control Signals (execution)
+				regWrite <= currentInstruction[11:8];
+				opCode <= currentInstruction[15:12];
+				immediateHigh <= currentInstruction[7:4];
+				immediateLow <= currentInstruction[3:0];
+				rDest <= currentInstruction[11:8];
+				pcEnabled <= 1'b1;
+				currentState <= 5'd0;
+				end
+			default:
+				begin
+				currentState <= 5'd0;
+				end
+		endcase
 		end
-		4'd2:
-			begin
-			//R-Type Control Signals
-			regWrite <= {1'b0, currentInstruction[11:8]};
-			opCode <= currentInstruction[15:12];
-			exop <= currentInstruction[7:4];
-			rDest <= currentInstruction[11:8];////////
-			rSrc <= currentInstruction[3:0];
-			regOrImm <= 1'b1;
-			//memWriteOrRead////////////////
-			pcEnabled <= 1'b1;
-			//memBEnabled hmm.
-			outReset <= 1'b1;
-			end
-		4'd3:
-			begin
-			//Load Type Control Signals
-			//regWrite <= {1'b0, currentInstruction[11:8]};
-			opCode <= currentInstruction[15:12];
-			exOp <= currentInstruction[7:4];
-			rDest <= currentInstruction[11:8];//////
-			rSrc <= currentInstruction[3:0];///////////////////////////////////////
-			regOrImm <= 1'b1;
-			memWriteOrRead <= 1'b1;
-			memAEnabled <= 1'b1;
-			//memBEnabled	
-			end
-		4'd4:
-			begin
-			//Secondary Load Type Control Signals
-			regWrite <= {1'b0, currentInstruction[11:8]};
-			opCode <= currentInstruction[15:12];
-			exOp <= currentInstruction[7:4];
-			rDest <= currentInstruction[11:8];//////
-			rSrc <= currentInstruction[3:0];///////////////////////////////////////
-			regOrImm <= 1'b1;
-			memWriteOrRead <= 1'b1;
-			pcEnabled <= 1'b1;
-			memAEnabled <= 1'b1;
-			outReset <= 1'b0;
-			end
-		4'd5:
-			begin
-			//Store Type Control Signals
-			opCode <= currentInstruction[15:12];
-			exop <= currentInstruction[7:4];
-			rSrc <= currentInstruction[11:8];
-			regOrImm <= 1'b1;
-			memWriteOrRead <= 1'b1; //is this asking write xor read or asking write or read
-			pcEnabled <= 1'b1;
-			memAEnabled <= 1'b1;
-			memAWriteEnabled <= 1'b1;
-			outReset <= 1'b0;
-			end
-		4'd6:
-			begin
-			//Branch Type Control Signals
-			opCode <= currentInstruction[15:12];
-			//need Alex's paper
-			end
-		4'd7:
-			begin
-			//Immediate Type Control Signals
-			end
-		4'd8:
-			begin
-			//Secondary Immediate Type Control Signals
-			end
-	endcase
 end
 
 endmodule
