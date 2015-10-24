@@ -57,11 +57,11 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RegisterBank_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sign_Extend_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sign_Extend_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sign_Test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sign_Test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Sign_Test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sign_Test_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Prog_Count_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Test_Prog_Count_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Test_Prog_Count_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Test_Prog_Count_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
@@ -83,9 +83,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445113762" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1445113762">
+    <transform xil_pn:end_ts="1445551674" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1445551674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="ALURegIntTester.v"/>
       <outfile xil_pn:name="ALURegIntegration.v"/>
@@ -116,11 +120,11 @@
       <outfile xil_pn:name="testPathing_REG_ALU_TEST.v"/>
       <outfile xil_pn:name="twoInputMux.v"/>
     </transform>
-    <transform xil_pn:end_ts="1445113762" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4602391510275545024" xil_pn:start_ts="1445113762">
+    <transform xil_pn:end_ts="1445550928" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4541836879917614511" xil_pn:start_ts="1445550928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445113762" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2563969306199804930" xil_pn:start_ts="1445113762">
+    <transform xil_pn:end_ts="1445550928" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5934584286859796499" xil_pn:start_ts="1445550928">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -128,9 +132,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1445113762" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1445113762">
+    <transform xil_pn:end_ts="1445551674" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1445551674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.v"/>
       <outfile xil_pn:name="ALURegIntTester.v"/>
       <outfile xil_pn:name="ALURegIntegration.v"/>
@@ -161,24 +170,30 @@
       <outfile xil_pn:name="testPathing_REG_ALU_TEST.v"/>
       <outfile xil_pn:name="twoInputMux.v"/>
     </transform>
-    <transform xil_pn:end_ts="1445113765" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8993420835564471142" xil_pn:start_ts="1445113762">
+    <transform xil_pn:end_ts="1445551677" xil_pn:in_ck="7350394339031217232" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4532705109487641156" xil_pn:start_ts="1445551674">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Sign_Test_beh.prj"/>
-      <outfile xil_pn:name="Sign_Test_isim_beh.exe"/>
+      <outfile xil_pn:name="Test_Prog_Count_beh.prj"/>
+      <outfile xil_pn:name="Test_Prog_Count_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1445113765" xil_pn:in_ck="6608249668909445719" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6586461833788513961" xil_pn:start_ts="1445113765">
+    <transform xil_pn:end_ts="1445551677" xil_pn:in_ck="6608249668909445719" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="78726731666758183" xil_pn:start_ts="1445551677">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Sign_Test_isim_beh.wdb"/>
+      <outfile xil_pn:name="Test_Prog_Count_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

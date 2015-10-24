@@ -19,26 +19,30 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Program_Counter(
-    input [15:0] branch_addr,
-    input sel_next,
+    //input [15:0] branch_addr,  ##Branch Stuff##
+    //input sel_next,
+	 input PCe,
 	 input clk,
 	 input reset,
-    output reg [15:0] addr_out
+    output reg [15:0] PC
     );
-	 reg [15:0] addr;
 	 always@(posedge clk, reset)
 	 begin
 		if(reset)
 		begin
-			addr_out = 0;
-		end
-		else if(sel_next)
-		begin
-			addr_out = branch_addr;
+			PC <= 0;
 		end
 		else
 		begin
-			addr_out = addr_out + 1;
+			if(PCe == 1'b1)
+				PC <= PC + 1;
+			else
+				PC <= PC;
 		end
+		
+		/*else if(sel_next)   #####Branch stuff#####
+		begin
+			PC = branch_addr;
+		end*/
 	 end	
 endmodule

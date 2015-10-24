@@ -25,30 +25,34 @@
 module Test_Prog_Count;
 
 	// Inputs
-	reg [15:0] branch_addr;
-	reg sel_next;
+	//reg [15:0] branch_addr; ##Branch STuff##
+	//reg sel_next;
+	reg PCe;
 	reg clk;
 	reg reset;
 
 	// Outputs
-	wire [15:0] addr_out;
+	wire [15:0] PC;
 
 	// Instantiate the Unit Under Test (UUT)
 	Program_Counter uut (
-		.branch_addr(branch_addr), 
-		.sel_next(sel_next), 
+		//.branch_addr(branch_addr), ##Branch Stuff##
+		//.sel_next(sel_next),
+		.PCe(PCe),
 		.clk(clk), 
 		.reset(reset), 
-		.addr_out(addr_out)
+		.PC(PC)
+		
 	);
 
 	always #1 clk = ~clk;
 	initial begin
 		// Initialize Inputs
-		branch_addr = 0;
-		sel_next = 0;
+		//branch_addr = 0;
+		//sel_next = 0;
 		clk = 0;
 		reset = 0;
+		PCe = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
@@ -58,22 +62,26 @@ module Test_Prog_Count;
 		#10;
 		reset = 0;
 		#10;
-		branch_addr = 0;
-		sel_next = 0;
-		#100; //wait to increment
+		//branch_addr = 0;
+		//sel_next = 0;
 		
-		branch_addr = 5000;
+		PCe = 1;
+		#100; //wait for increment
+		PCe = 0;
+		#100;
+		
+		/*branch_addr = 5000; ##Branch Stuff##
 		sel_next = 1;
 		#10;
 		sel_next = 0;
-		#100; //wait to increment
+		#100; //wait to increment*/
 		
 		reset = 1;
 		#10;
 		reset = 0;
-		#100;
+		#50;
 		
-
+		
 	end
       
 endmodule
