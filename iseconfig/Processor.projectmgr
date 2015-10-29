@@ -7,7 +7,6 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode></ClosedNode>
          <ClosedNode>/ALURegIntegration C:|Users|u0694842|Desktop|oct14|Processor|ALURegIntegration.v</ClosedNode>
          <ClosedNode>/ALURegIntegration C:|Users|u0694842|Desktop|oct14|Processor|ALURegIntegration.v/regBank - RegisterBank</ClosedNode>
          <ClosedNode>/ALU_FPGA_TESTER C:|Users|u0694842|Desktop|oct14|Processor|ALU_FPGA_TESTER.v</ClosedNode>
@@ -22,13 +21,13 @@
          <ClosedNode>/RegisterBank C:|Users|u0694842|Desktop|oct14|Processor|RegisterBank.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Sign_Extend (C:/Users/u0694842/Documents/GitHub/Processor/Sign_Extend.v)</SelectedItem>
+         <SelectedItem>ProcessorControlUnit (C:/Users/u0694842/Documents/GitHub/Processor/program_counter_module.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000089000000020000000000000000000000000200000064ffffffff000000810000000300000002000000890000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000161000000020000000000000000000000000200000064ffffffff000000810000000300000002000001610000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Sign_Extend (C:/Users/u0694842/Documents/GitHub/Processor/Sign_Extend.v)</CurrentItem>
+      <CurrentItem>ProcessorControlUnit (C:/Users/u0694842/Documents/GitHub/Processor/program_counter_module.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -51,7 +50,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000171000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000a50000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000016b000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004200000001000000000000002400000001000000000000006600000001000000000000009f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>ALU.v</CurrentItem>
    </ItemView>
