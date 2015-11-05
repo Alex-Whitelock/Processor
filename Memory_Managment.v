@@ -87,6 +87,6 @@ endmodule
    //  The following code is only necessary if you wish to initialize the RAM 
    //  contents via an external file (use $readmemb for binary data)
 //   initial
-//      $readmemh("<data_file_name>", <rom_name>, <begin_address>, <end_address>);
+//$readmemh("<data_file_name>", <rom_name>, <begin_address>, <end_address>);
 
    
