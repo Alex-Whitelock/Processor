@@ -41,6 +41,7 @@ module ALU(
 
 parameter R_Type=4'b0000;
 parameter Shift=4'b1000;
+parameter LWSW=4'b0100; 
 
 //----Info for ExOp R-type----
 parameter ADD = 4'b0101; 
@@ -55,8 +56,13 @@ parameter OR = 4'b0010;
 parameter XOR = 4'b0011;
 parameter NOP = 4'b0000;
 parameter NOT = 4'b0100;
-parameter LW = 4'b1100; 
-parameter SW = 4'b1111; 
+//parameter LW = 4'b1100; 
+//parameter SW = 4'b1111; 
+
+
+//---Infor for lwsw exop;
+	parameter LW=4'b0000;
+	parameter SW=4'b0100;
 
 
 //----Info for just OP I type and J type----
@@ -363,6 +369,22 @@ always@(Rdest, Rsrc, op, exop,Cin)
 							flags[0] = 0; //No carry possible we are not doing arithmetic
 							
 						end
+					
+					NOP:
+						begin
+						out=Rdest;
+						flags=5'b00000;
+						end
+					default:
+						begin
+							out=Rdest;
+							flags=5'b00000;
+						end
+				endcase
+			end
+		LWSW:
+			begin
+				case(exop)
 					LW:
 						begin
 						//do we want to pass out rdest considering that r
@@ -374,19 +396,14 @@ always@(Rdest, Rsrc, op, exop,Cin)
 						out = Rdest;
 						flags=5'b00000;
 						end
-					NOP:
-						begin
-						out=0;
-						flags=5'b00000;
-						end
 					default:
 						begin
-							out=0;
-							flags=5'b00000;
+						out=Rdest;
+						flags=5'b00000;
+						//should never happen
 						end
 				endcase
 			end
-			
 		Shift:
 			begin
 				case(exop)
