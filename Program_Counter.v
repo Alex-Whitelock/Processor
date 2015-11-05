@@ -19,30 +19,29 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Program_Counter(
-    //input [15:0] branch_addr,  ##Branch Stuff##
-    //input sel_next,
 	 input PCe,
 	 input clk,
 	 input reset,
-    output reg [15:0] PC
+	 input [14:0]pcInput,
+    output reg  [14:0] PC
     );
-	 always@(posedge clk, reset)
-	 begin
+	 
+	 //wire [14:0] signExtendedBranchOff;
+	// wire [14:0] jumpAddrRemoveTopBit = JumpAddr[14:0];
+	 
+	 
+	 
+	 always@(posedge clk)
+		begin
 		if(reset)
-		begin
 			PC <= 0;
-		end
+		else if(PCe)
+			begin
+				PC<=pcInput;
+			end
 		else
-		begin
-			if(PCe == 1'b1)
-				PC <= PC + 1;
-			else
+			begin 
 				PC <= PC;
-		end
-		
-		/*else if(sel_next)   #####Branch stuff#####
-		begin
-			PC = branch_addr;
-		end*/
-	 end	
+			end
+		end 	
 endmodule
