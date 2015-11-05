@@ -165,6 +165,10 @@
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="81"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="81"/>
     </file>
+    <file xil_pn:name="Program_Counter.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="82"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="82"/>
+    </file>
   </files>
 
   <properties>
