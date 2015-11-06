@@ -139,7 +139,7 @@ reg [4:0] currentState;
 reg [4:0] nextState=4'd0;
 reg [15:0] currentInstruction;
 
-
+// Current State
  always@ (posedge clock )
 	 begin
 		if(reset)
@@ -154,11 +154,13 @@ reg [15:0] currentInstruction;
 	 
 	 end
 	 
+	 // Next State
 	 always@(currentState,Instruction)
 		begin
 			case (currentState)
 				FetchState:
 					begin
+					//setEnable for latch.
 						nextState=DecodeState;
 					end
 				DecodeState:
