@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Rogue Squadron
+// Engineer: Logan, Alex, Will, Daniel
 // 
 // Create Date:    16:27:52 11/03/2015 
 // Design Name: 
@@ -41,7 +41,8 @@ module ControlLogic(
     output reg outReset,
 	 output reg pcToRegBuff,
 	 output reg memToRegBuff,
-	 output reg ALUToRegBuff
+	 output reg ALUToRegBuff,
+	 output reg instructionLatchEnable
     );
 parameter R_Type=4'b0000;
 parameter Shift=4'b1000;
@@ -139,7 +140,7 @@ reg [4:0] currentState;
 reg [4:0] nextState=4'd0;
 reg [15:0] currentInstruction;
 
-// Current State
+
  always@ (posedge clock )
 	 begin
 		if(reset)
@@ -154,13 +155,11 @@ reg [15:0] currentInstruction;
 	 
 	 end
 	 
-	 // Next State
 	 always@(currentState,Instruction)
 		begin
 			case (currentState)
 				FetchState:
 					begin
-					//setEnable for latch.
 						nextState=DecodeState;
 					end
 				DecodeState:
@@ -318,7 +317,8 @@ reg [15:0] currentInstruction;
 				pcToRegBuff = 1'b0; //only set to 1 in JAL 
 				memToRegBuff = 1'b0; //only set to 1 for LW
 				ALUToRegBuff = 1'b1; //set to 1 for all other cases.  Set to 0 for the above two cases.
-				outReset = 0;
+				outReset = 1'b0;
+				instructionLatchEnable = 1'b0;
 				
 				opCode = Instruction[15:12];
 				exOp=Instruction[7:4];
@@ -339,6 +339,7 @@ reg [15:0] currentInstruction;
 						begin
 							regWrite=5'b10000;
 							memAEnabled = 1'b1;
+							instructionLatchEnable = 1'b1;
 						end
 					DecodeState:
 						begin

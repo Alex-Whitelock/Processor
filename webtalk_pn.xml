@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Oct 24 12:24:00 2015">
+<application name="pn" timeStamp="Sat Nov 07 10:48:24 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="FB9A98F36B4C4EE5890DA11ECEC3848B" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
@@ -19,7 +19,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_ProjectDescription" value="Collaborative design of 16 bit computer with I/O system" type="process"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/Test_Prog_Count/uut" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/ALU_FPGA_TESTER" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="Schematic" type="design"/>
@@ -29,9 +29,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWbtProjectID" value="FB9A98F36B4C4EE5890DA11ECEC3848B" type="design"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.Program_Counter" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.ALU_FPGA_TESTER" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
-<property name="PROP_AutoTop" value="true" type="design"/>
+<property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan6" type="design"/>
 <property name="PROP_DevDevice" value="xc6slx16" type="design"/>
 <property name="PROP_DevFamilyPMName" value="spartan6" type="design"/>
@@ -39,8 +39,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_BMM" value="1" type="source"/>
-<property name="FILE_VERILOG" value="28" type="source"/>
+<property name="FILE_VERILOG" value="35" type="source"/>
 </section>
 </application>
 </document>

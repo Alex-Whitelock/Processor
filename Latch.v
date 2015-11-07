@@ -21,7 +21,7 @@
 module Latch(
 	 input enable,
     input latchInput,
-    output latchOutput
+    output reg latchOutput
     );
 
 always@ (enable)
