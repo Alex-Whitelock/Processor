@@ -18,17 +18,18 @@
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v</ClosedNode>
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Documents|GitHub|Processor|FPGA_REG_ALU_Display.v/alu - ALURegIntegration</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Desktop|oct14|Processor|Mem_FPGA_Test.v</ClosedNode>
+         <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Documents|GitHub|Processor|Mem_FPGA_Test.v</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Documents|GitHub|Processor|Mem_FPGA_Test.v/light - FOUR_LIGHTS_FSM</ClosedNode>
          <ClosedNode>/RegisterBank C:|Users|u0694842|Desktop|oct14|Processor|RegisterBank.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>controlCPU - ControlLogic (C:/Users/u0694842/Documents/GitHub/Processor/ControlLogic.v)</SelectedItem>
+         <SelectedItem>CPU_Top (C:/Users/u0694842/Documents/GitHub/Processor/CPU_Top.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000181000000020000000000000000000000000200000064ffffffff000000810000000300000002000001810000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>controlCPU - ControlLogic (C:/Users/u0694842/Documents/GitHub/Processor/ControlLogic.v)</CurrentItem>
+      <CurrentItem>CPU_Top (C:/Users/u0694842/Documents/GitHub/Processor/CPU_Top.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -77,13 +78,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Synthesize - XST</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Synthesize - XST</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -94,6 +95,8 @@
          <ClosedNode>/ALURegIntTester C:|Users|u0694842|Documents|GitHub|Processor|ALURegIntTester.v/uut - ALURegIntegration</ClosedNode>
          <ClosedNode>/ALU_FPGA_TESTER C:|Users|u0607599|Documents|GitHub|Processor|ALU_FPGA_TESTER.v</ClosedNode>
          <ClosedNode>/ALU_FPGA_TESTER C:|Users|u0694842|Desktop|oct14|Processor|ALU_FPGA_TESTER.v</ClosedNode>
+         <ClosedNode>/ALU_FPGA_TESTER C:|Users|u0694842|Documents|GitHub|Processor|ALU_FPGA_TESTER.v</ClosedNode>
+         <ClosedNode>/CPU_Top C:|Users|u0694842|Documents|GitHub|Processor|CPU_Top.v</ClosedNode>
          <ClosedNode>/FPGA_REG_ALU_Display C:|Users|u0694842|Desktop|oct14|Processor|FPGA_REG_ALU_Display.v</ClosedNode>
          <ClosedNode>/Mem_FPGA_Test C:|Users|u0694842|Desktop|oct14|Processor|Mem_FPGA_Test.v</ClosedNode>
          <ClosedNode>/MemorySimulations C:|Users|u0607599|Documents|GitHub|Processor|MemorySimulations.v</ClosedNode>
@@ -102,6 +105,7 @@
          <ClosedNode>/Memory_Simulations_2 C:|Users|u0607599|Documents|GitHub|Processor|Memory_Simulations_2.v</ClosedNode>
          <ClosedNode>/Memory_Simulations_2 C:|Users|u0694842|Desktop|oct14|Processor|Memory_Simulations_2.v</ClosedNode>
          <ClosedNode>/Memory_Simulations_2 C:|Users|u0694842|Documents|GitHub|Processor|Memory_Simulations_2.v</ClosedNode>
+         <ClosedNode>/Sign_Test C:|Users|u0694842|Documents|GitHub|Processor|Sign_Test.v</ClosedNode>
          <ClosedNode>/Test_Prog_Count C:|Users|u0694842|Documents|GitHub|Processor|Test_Prog_Count.v</ClosedNode>
          <ClosedNode>/immTest C:|Users|u0607599|Documents|GitHub|Processor|immTest.v</ClosedNode>
          <ClosedNode>/immTest C:|Users|u0694842|Desktop|oct14|Processor|immTest.v</ClosedNode>

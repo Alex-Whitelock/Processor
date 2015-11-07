@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/u0694842/Documents/GitHub/Processor/CPU_Top.xst" -ofn "C:/Users/u0694842/Documents/GitHub/Processor/CPU_Top.syr" 

@@ -33,9 +33,9 @@ module CPU_Top(
 	
 	//also the value going from memory Dout to the register is called 'instruction.'  Watch out for that.
 	
-	ControlLogic controlCPU(clock, readDataA, reset, flagsOutput, regWrite, opCode, exOp, immediateHigh, immediateLow,
+	ControlLogic controlCPU(clock, latchedInstruction, reset, flagsOutput, regWrite, opCode, exOp, immediateHigh, immediateLow,
 		rDest, rSrc, regOrImm, pcEnabled, branchMux, jumpMux, pcOrRegMemMUX, memAEnabled, memAWriteEnabled, memBEnabled, 
-		outReset, pcToRegBuff, memToRegBuff, ALUToRegBuff);
+		outReset, pcToRegBuff, memToRegBuff, ALUToRegBuff, instructionLatchEnable);
 		//flagsEnabled goes to the flags register
 		//flagsEnabled is removed for the time being, we need to put it back in once it's been implemented in the control logic and we know the order of inputs
 		
@@ -56,6 +56,8 @@ module CPU_Top(
 		ReadDataB);
 		
 	twoInputMux memAddressMux(pcOrRegMemMUX, inputABus, {1'b0, PCOutput}, memAddressInputA); 
+	
+	Latch instructionLatch(instructionLatchEnable, ReadDataA, latchedInstruction);
 
 	
 endmodule

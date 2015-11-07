@@ -5,13 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:\Users\u0694842\Documents\GitHub\Processor\Latch.v" Line 31: Signal &lt;<arg fmt="%s" index="1">latchInput</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="error" file="HDLCompiler" num="271" delta="new" >"C:\Users\u0694842\Documents\GitHub\Processor\CPU_Top.v" Line 51: Cannot index into non-array <arg fmt="%s" index="1">immediateHigh</arg>
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:\Users\u0694842\Documents\GitHub\Processor\Latch.v" Line 34: Signal &lt;<arg fmt="%s" index="1">latchOutput</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">latchOutput</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="error" file="HDLCompiler" num="598" delta="new" >"C:\Users\u0694842\Documents\GitHub\Processor\CPU_Top.v" Line 21: Module &lt;<arg fmt="%s" index="1">CPU_Top</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>
